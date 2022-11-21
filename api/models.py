@@ -29,10 +29,8 @@ class Item(models.Model):
 class Order(models.Model):
     multiply_items = models.ManyToManyField(
         Item,
-)
+    )
 
     class Meta:
         verbose_name = 'Заказ'
         verbose_name_plural = 'Заказы'
-
-
